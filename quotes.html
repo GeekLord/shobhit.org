@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quotes · shobhit.org</title>
+  <meta name="description" content="A rotating stage of thought-provoking and amusing quotes, plus a whole wall to browse. Copy your favourite and carry it with you." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow reveal">Words to carry</span>
+        <h1 class="reveal d1">Quotes for the <span class="grad">curious</span></h1>
+        <p class="reveal d2">Thought-provoking, occasionally silly, always on your side.</p>
+      </div>
+    </section>
+
+    <section class="quotes">
+      <div class="wrap">
+        <div class="quote-stage reveal">
+          <div>
+            <p class="quote-text" id="quoteText">Loading something delightful…</p>
+            <p class="quote-author" id="quoteAuthor"></p>
+            <div class="quote-actions">
+              <button class="btn btn--ghost" id="newQuoteBtn">Shuffle ✨</button>
+              <button class="btn" id="copyQuoteBtn">Copy 📋</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qwall-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The whole collection</span>
+          <h2>The quote wall</h2>
+          <p>Browse them all. Shuffle the stage above five times to unlock a little something.</p>
+        </div>
+        <div class="qwall" id="quoteWall"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/quotes.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

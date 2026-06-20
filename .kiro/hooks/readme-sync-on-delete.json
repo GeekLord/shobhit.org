@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Keep README in sync (on delete)",
+      "trigger": "PostFileDelete",
+      "description": "When a source file is deleted, remove it from the README and update affected sections.",
+      "matcher": "\\.(html|js|css|svg|json)$",
+      "action": {
+        "type": "agent",
+        "prompt": "A project file was just deleted. Update README.md to remove references to it from the \"Project structure\", \"Pages\", and any feature/script/API sections, and fix anything that no longer applies. Only edit README.md and keep changes minimal and consistent with the existing style. Do not modify any source files in response to this hook."
+      }
+    }
+  ]
+}

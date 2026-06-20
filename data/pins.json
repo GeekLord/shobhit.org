@@ -1,0 +1,119 @@
+[
+  {
+    "id": "seed-delhi",
+    "lat": 28.6139,
+    "lon": 77.209,
+    "place": "New Delhi, India",
+    "msg": "Namaste from where it all began! 🇮🇳",
+    "ts": 1700000000000,
+    "seed": true
+  },
+  {
+    "id": "seed-mumbai",
+    "lat": 19.076,
+    "lon": 72.8777,
+    "place": "Mumbai, India",
+    "msg": "City of dreams, full of Shobhits.",
+    "ts": 1700000001000,
+    "seed": true
+  },
+  {
+    "id": "seed-bengaluru",
+    "lat": 12.9716,
+    "lon": 77.5946,
+    "place": "Bengaluru, India",
+    "msg": "Coding and filter coffee. ☕",
+    "ts": 1700000002000,
+    "seed": true
+  },
+  {
+    "id": "seed-nyc",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "place": "New York, USA",
+    "msg": "Made it here, can make it anywhere!",
+    "ts": 1700000003000,
+    "seed": true
+  },
+  {
+    "id": "seed-sf",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "place": "San Francisco, USA",
+    "msg": "Building cool things by the bay.",
+    "ts": 1700000004000,
+    "seed": true
+  },
+  {
+    "id": "seed-toronto",
+    "lat": 43.6532,
+    "lon": -79.3832,
+    "place": "Toronto, Canada",
+    "msg": "Eh? Shobhit here too! 🍁",
+    "ts": 1700000005000,
+    "seed": true
+  },
+  {
+    "id": "seed-london",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "place": "London, UK",
+    "msg": "Mind the gap, fellow Shobhits.",
+    "ts": 1700000006000,
+    "seed": true
+  },
+  {
+    "id": "seed-berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "place": "Berlin, Germany",
+    "msg": "Hallo from Berlin!",
+    "ts": 1700000007000,
+    "seed": true
+  },
+  {
+    "id": "seed-dubai",
+    "lat": 25.2048,
+    "lon": 55.2708,
+    "place": "Dubai, UAE",
+    "msg": "Shining in the desert sun.",
+    "ts": 1700000008000,
+    "seed": true
+  },
+  {
+    "id": "seed-singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "place": "Singapore",
+    "msg": "Tiny island, big Shobhit energy.",
+    "ts": 1700000009000,
+    "seed": true
+  },
+  {
+    "id": "seed-tokyo",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "place": "Tokyo, Japan",
+    "msg": "こんにちは, Shobhit-san!",
+    "ts": 1700000010000,
+    "seed": true
+  },
+  {
+    "id": "seed-sydney",
+    "lat": -33.8688,
+    "lon": 151.2093,
+    "place": "Sydney, Australia",
+    "msg": "G'day from down under! 🦘",
+    "ts": 1700000011000,
+    "seed": true
+  },
+  {
+    "id": "p_mqmoe10cd9umx",
+    "lat": 26.89159,
+    "lon": 80.95944,
+    "place": "Lucknow, India",
+    "msg": "Hello! from Shobhit Kumar Prabhakar.",
+    "ts": 1781979171996,
+    "seed": false
+  }
+]

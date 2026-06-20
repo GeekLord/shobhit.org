@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shobhit.org — a tiny universe for everyone named Shobhit</title>
+  <meta name="description" content="A playful corner of the internet built only for people named Shobhit. Pin your spot on a real world map, decode the name, collect quotes, play games, and hunt for hidden surprises." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <!-- animated scene -->
+      <svg class="hero__bg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fde4f2"/>
+            <stop offset="0.5" stop-color="#e8e1ff"/>
+            <stop offset="1" stop-color="#dff4ff"/>
+          </linearGradient>
+          <linearGradient id="hillA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ce0ff"/><stop offset="1" stop-color="#6fcfe6"/></linearGradient>
+          <linearGradient id="hillB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c5b3ff"/><stop offset="1" stop-color="#a78bff"/></linearGradient>
+          <linearGradient id="hillC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc2dd"/><stop offset="1" stop-color="#ff9ec7"/></linearGradient>
+        </defs>
+
+        <rect width="1200" height="600" fill="url(#sky)"/>
+
+        <!-- sun -->
+        <g class="hero-sun">
+          <circle class="hero-sun__halo" cx="980" cy="150" r="118" fill="#fff3c4" opacity="0.28"/>
+          <circle class="hero-sun__rays" cx="980" cy="150" r="98" fill="none" stroke="#ffe27a" stroke-width="16" stroke-dasharray="5 28" opacity="0.55"/>
+          <circle class="hero-sun__core" cx="980" cy="150" r="78" fill="#fff3c4"/>
+          <circle cx="952" cy="132" r="26" fill="#fff" opacity="0.35"/>
+        </g>
+
+        <!-- clouds -->
+        <g class="hero-cloud hero-cloud--a" fill="#ffffff" opacity="0.9">
+          <ellipse cx="240" cy="120" rx="74" ry="30"/><ellipse cx="300" cy="132" rx="56" ry="26"/><ellipse cx="186" cy="136" rx="48" ry="22"/>
+        </g>
+        <g class="hero-cloud hero-cloud--b" fill="#ffffff" opacity="0.85">
+          <ellipse cx="640" cy="92" rx="60" ry="25"/><ellipse cx="692" cy="100" rx="46" ry="21"/>
+        </g>
+        <g class="hero-cloud hero-cloud--c" fill="#ffffff" opacity="0.8">
+          <ellipse cx="500" cy="220" rx="50" ry="20"/><ellipse cx="540" cy="228" rx="38" ry="17"/>
+        </g>
+
+        <!-- hills -->
+        <path class="hero-hill hero-hill--a" id="hillA" d="M0 470 C220 400 360 520 600 460 C840 400 1000 500 1200 440 L1200 600 L0 600 Z" fill="url(#hillA)"/>
+        <path class="hero-hill hero-hill--b" id="hillB" d="M0 510 C260 450 420 560 680 500 C900 450 1060 540 1200 500 L1200 600 L0 600 Z" fill="url(#hillB)"/>
+        <path class="hero-hill hero-hill--c" id="hillC" d="M0 555 C240 510 480 580 760 545 C980 515 1100 565 1200 545 L1200 600 L0 600 Z" fill="url(#hillC)"/>
+
+        <!-- twinkling sparkles -->
+        <g fill="#ffffff">
+          <path class="hero-twinkle" style="animation-delay:0s"  d="M420 230 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+          <path class="hero-twinkle" style="animation-delay:0.8s" d="M120 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+          <path class="hero-twinkle" style="animation-delay:1.6s" d="M820 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+          <path class="hero-twinkle" style="animation-delay:2.2s" d="M700 180 l2.6 6 6 2.6 -6 2.6 -2.6 6 -2.6 -6 -6 -2.6 6 -2.6 z"/>
+        </g>
+      </svg>
+
+      <span class="blob blob--1 float-soft"></span>
+      <span class="blob blob--2 float-y"></span>
+      <span class="blob blob--3 float-soft"></span>
+
+      <div class="wrap hero__grid">
+        <div class="hero__copy reveal">
+          <span class="eyebrow">Population: Shobhit ✦</span>
+          <h1>Hey there,<br><span class="grad">fellow Shobhit!</span></h1>
+          <p class="hero__lead">You found the one website on the entire internet built just for people who share your wonderful name. Pin yourself on a real world map, decode the name, beat the games, and sniff out the hidden surprises.</p>
+          <div class="hero__cta">
+            <a href="map.html" class="btn">Pin yourself 📍</a>
+            <a href="play.html" class="btn btn--ghost">Hit the playground 🎮</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat-card">
+              <span class="stat-card__icon stat-card__icon--1">📍</span>
+              <span class="stat-card__body"><b class="stat-card__num" data-stat="pins">—</b><span class="stat-card__label">Shobhits on the map</span></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__icon stat-card__icon--2">🌍</span>
+              <span class="stat-card__body"><b class="stat-card__num" data-stat="places">—</b><span class="stat-card__label">places worldwide</span></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__icon stat-card__icon--3">🏆</span>
+              <span class="stat-card__body"><b class="stat-card__num" data-egg-count>0</b><span class="stat-card__label">achievements found</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__art reveal d2">
+          <div class="hero__mascot-wrap float-y">
+            <svg class="hero__mascot" viewBox="0 -22 240 282" role="img" aria-label="A cheerful Shobhit mascot that follows your cursor">
+              <defs>
+                <radialGradient id="mbody" cx="0.4" cy="0.35" r="0.8">
+                  <stop offset="0" stop-color="#ffd6e7"/><stop offset="0.55" stop-color="#ff9ec0"/><stop offset="1" stop-color="#c86bff"/>
+                </radialGradient>
+                <linearGradient id="mcheek" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7aa8"/><stop offset="1" stop-color="#ff5c93"/></linearGradient>
+                <linearGradient id="mband" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ad4e8"/><stop offset="1" stop-color="#1aa6bd"/></linearGradient>
+              </defs>
+              <ellipse cx="120" cy="238" rx="62" ry="12" fill="#9b5cff" opacity="0.18"/>
+              <ellipse cx="96" cy="222" rx="20" ry="13" fill="#c86bff"/>
+              <ellipse cx="144" cy="222" rx="20" ry="13" fill="#c86bff"/>
+              <!-- arms -->
+              <path class="m-arm m-arm--l" d="M58 128 q-30 -4 -40 -30" stroke="#c86bff" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <path class="m-arm m-arm--r" d="M182 128 q30 -4 40 -30" stroke="#c86bff" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <circle cx="17" cy="97" r="9" fill="#d885ff"/>
+              <circle cx="223" cy="97" r="9" fill="#d885ff"/>
+              <!-- body -->
+              <path d="M120 40 C70 40 44 84 44 130 C44 188 78 218 120 218 C162 218 196 188 196 130 C196 84 170 40 120 40 Z" fill="url(#mbody)"/>
+              <ellipse cx="104" cy="120" rx="44" ry="52" fill="#fff" opacity="0.18"/>
+              <!-- bandana headband -->
+              <g class="m-band">
+                <path d="M196 92 L216 104 L210 118 L193 102 Z" fill="#1aa6bd"/>
+                <path d="M198 101 L214 121 L205 131 L192 111 Z" fill="#1aa6bd"/>
+                <path d="M46 78 Q120 68 194 78 L194 102 Q120 92 46 102 Z" fill="url(#mband)"/>
+                <path d="M50 82 Q120 73 190 82" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+                <circle cx="196" cy="90" r="9" fill="url(#mband)"/>
+                <circle cx="196" cy="90" r="3.4" fill="#0f7f93"/>
+                <text x="120" y="87" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold',sans-serif" font-size="15" font-weight="800" fill="#ffffff" letter-spacing="0.5">Shobhit</text>
+              </g>
+              <!-- antenna + star -->
+              <g class="m-antenna">
+                <path d="M120 42 q6 -26 22 -34" stroke="#c86bff" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <g transform="translate(146 -2)">
+                  <path d="M0 -12 L3.4 -3.6 L12 -3.6 L5 2 L7.4 11 L0 5.4 L-7.4 11 L-5 2 L-12 -3.6 L-3.4 -3.6 Z" fill="#ffe680" stroke="#ffd23f" stroke-width="1.5"/>
+                </g>
+              </g>
+              <!-- eyes -->
+              <g class="m-eye-grp">
+                <ellipse cx="96" cy="120" rx="15" ry="17" fill="#fff"/>
+                <g class="m-pupil" id="mPupilL"><circle cx="99" cy="124" r="8.5" fill="#2b2440"/><circle cx="102" cy="121" r="3" fill="#fff"/></g>
+              </g>
+              <g class="m-eye-grp">
+                <ellipse cx="146" cy="120" rx="15" ry="17" fill="#fff"/>
+                <g class="m-pupil" id="mPupilR"><circle cx="148" cy="124" r="8.5" fill="#2b2440"/><circle cx="151" cy="121" r="3" fill="#fff"/></g>
+              </g>
+              <!-- cheeks -->
+              <circle cx="74" cy="146" r="10" fill="url(#mcheek)" opacity="0.8"/>
+              <circle cx="166" cy="146" r="10" fill="url(#mcheek)" opacity="0.8"/>
+              <!-- smile -->
+              <path d="M104 150 q17 18 34 0" stroke="#2b2440" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="explore">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Choose your adventure</span>
+          <h2>Five ways to have fun</h2>
+          <p>Every corner of this site does something delightful. Start anywhere.</p>
+        </div>
+        <div class="explore__grid">
+          <a class="xcard xcard--1 reveal d1" href="map.html">
+            <span class="xcard__icon">🗺️</span><h3>World Map</h3>
+            <p>Drop a real pin on a real map and leave a message for every Shobhit after you.</p>
+            <span class="xcard__go">Open the map →</span>
+          </a>
+          <a class="xcard xcard--2 reveal d2" href="name.html">
+            <span class="xcard__icon">✨</span><h3>The Name</h3>
+            <p>What "Shobhit" means, letter by letter, plus your personal Shobhit vibe.</p>
+            <span class="xcard__go">Decode it →</span>
+          </a>
+          <a class="xcard xcard--3 reveal d3" href="quotes.html">
+            <span class="xcard__icon">💬</span><h3>Quotes</h3>
+            <p>A wall of thought-provoking, occasionally silly lines — all for you.</p>
+            <span class="xcard__go">Get inspired →</span>
+          </a>
+          <a class="xcard xcard--4 reveal d4" href="play.html">
+            <span class="xcard__icon">🎮</span><h3>Playground</h3>
+            <p>Catch the Mascot, Memory Match, and the Shobhit Quiz await.</p>
+            <span class="xcard__go">Play now →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE TEASER -->
+    <section class="quotes">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">A little spark</span>
+          <h2>Quote of the moment</h2>
+        </div>
+        <div class="quote-stage reveal d1">
+          <div>
+            <p class="quote-text" id="quoteText">Loading something delightful…</p>
+            <p class="quote-author" id="quoteAuthor"></p>
+            <div class="quote-actions">
+              <button class="btn btn--ghost" id="newQuoteBtn">Give me another ✨</button>
+              <a class="btn" href="quotes.html">See the whole wall →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACTS TEASER -->
+    <section class="facts">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The name decoded</span>
+          <h2>Fun facts about "Shobhit"</h2>
+          <p>A name with serious sparkle. Here's a taste.</p>
+        </div>
+        <div class="facts__grid" id="factsGrid" data-limit="4"></div>
+        <p style="text-align:center;margin-top:30px;"><a class="btn" href="name.html">Explore the whole name →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/quotes.js"></script>
+  <script src="scripts/home.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

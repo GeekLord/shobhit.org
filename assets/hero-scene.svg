@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dreamy pastel landscape">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde4f2"/>
+      <stop offset="0.5" stop-color="#e8e1ff"/>
+      <stop offset="1" stop-color="#dff4ff"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc2dd"/>
+      <stop offset="1" stop-color="#ff9ec7"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c5b3ff"/>
+      <stop offset="1" stop-color="#a78bff"/>
+    </linearGradient>
+    <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ce0ff"/>
+      <stop offset="1" stop-color="#6fcfe6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#sky)"/>
+
+  <!-- sun / moon -->
+  <circle cx="980" cy="150" r="80" fill="#fff3c4" opacity="0.9"/>
+  <circle cx="980" cy="150" r="110" fill="#fff3c4" opacity="0.25"/>
+
+  <!-- clouds -->
+  <g fill="#ffffff" opacity="0.85">
+    <ellipse cx="220" cy="120" rx="70" ry="30"/>
+    <ellipse cx="280" cy="130" rx="55" ry="26"/>
+    <ellipse cx="170" cy="135" rx="46" ry="22"/>
+    <ellipse cx="640" cy="90" rx="58" ry="24"/>
+    <ellipse cx="690" cy="98" rx="44" ry="20"/>
+  </g>
+
+  <!-- hills -->
+  <path d="M0 470 C220 400 360 520 600 460 C840 400 1000 500 1200 440 L1200 600 L0 600 Z" fill="url(#hill3)"/>
+  <path d="M0 510 C260 450 420 560 680 500 C900 450 1060 540 1200 500 L1200 600 L0 600 Z" fill="url(#hill2)"/>
+  <path d="M0 555 C240 510 480 580 760 545 C980 515 1100 565 1200 545 L1200 600 L0 600 Z" fill="url(#hill1)"/>
+
+  <!-- floating sparkles -->
+  <g fill="#ffffff">
+    <path d="M420 230 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+    <path d="M820 280 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+    <path d="M120 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playground · shobhit.org</title>
+  <meta name="description" content="Three mini-games for Shobhits: Catch the Mascot, Emoji Memory Match, and the Shobhit Quiz. Plus your achievements board." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow reveal">Pure play</span>
+        <h1 class="reveal d1">The <span class="grad">Playground</span></h1>
+        <p class="reveal d2">Three games, a pile of achievements, and zero pressure. Sound is off by default — flip 🔇 in the menu for full effect.</p>
+      </div>
+    </section>
+
+    <section class="games">
+      <div class="wrap">
+        <!-- GAME 1 -->
+        <article class="game-card reveal">
+          <div class="game-card__head">
+            <h2>🐾 Catch the Mascot</h2>
+            <div class="game-card__stats">
+              <span>Score <b id="whackScore">0</b></span>
+              <span>Time <b id="whackTime">20</b>s</span>
+              <span>Best <b id="whackBest">0</b></span>
+            </div>
+          </div>
+          <p>Mascots keep popping up. Tap as many as you can in 20 seconds. Catch 18+ for a shiny achievement.</p>
+          <div class="whack-grid" id="whackGrid"></div>
+          <button class="btn" id="whackStart">Start ▶</button>
+        </article>
+
+        <!-- GAME 2 -->
+        <article class="game-card reveal d1">
+          <div class="game-card__head">
+            <h2>🧠 Emoji Memory Match</h2>
+            <div class="game-card__stats">
+              <span>Moves <b id="memoryMoves">0</b></span>
+              <span>Best <b id="memoryBest">—</b></span>
+            </div>
+          </div>
+          <p>Flip the cards and match all eight pairs in as few moves as possible.</p>
+          <div class="mem-grid" id="memoryGrid"></div>
+          <button class="btn" id="memoryStart">Deal the cards 🃏</button>
+        </article>
+
+        <!-- GAME 3 -->
+        <article class="game-card reveal d2">
+          <div class="game-card__head">
+            <h2>🎯 The Shobhit Quiz</h2>
+          </div>
+          <p>Five quick questions. Score 4+ to prove your Shobhit scholarship.</p>
+          <div class="quiz-box" id="quizBox">
+            <div class="quiz-start">
+              <div class="quiz-start__emoji">🎓</div>
+              <button class="btn" id="quizStart">Start the quiz ▶</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ACHIEVEMENTS -->
+        <article class="game-card reveal d3">
+          <div class="game-card__head">
+            <h2>🏆 Achievements</h2>
+            <div class="game-card__stats"><span><b data-egg-count>0</b> / <span id="achTotal">10</span> found</span></div>
+          </div>
+          <p>Hidden surprises live all over this site. How many can you uncover?</p>
+          <div class="ach-board" id="achBoard"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/play.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

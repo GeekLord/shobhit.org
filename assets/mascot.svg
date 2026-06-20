@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -22 240 282" width="240" height="282" role="img" aria-label="Friendly Shobhit mascot">
+  <defs>
+    <radialGradient id="body" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffd6e7"/>
+      <stop offset="0.55" stop-color="#ff9ec0"/>
+      <stop offset="1" stop-color="#c86bff"/>
+    </radialGradient>
+    <linearGradient id="cheek" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7aa8"/>
+      <stop offset="1" stop-color="#ff5c93"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ad4e8"/>
+      <stop offset="1" stop-color="#1aa6bd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shadow -->
+  <ellipse cx="120" cy="238" rx="62" ry="12" fill="#9b5cff" opacity="0.18"/>
+
+  <!-- little feet -->
+  <ellipse cx="96" cy="222" rx="20" ry="13" fill="#c86bff"/>
+  <ellipse cx="144" cy="222" rx="20" ry="13" fill="#c86bff"/>
+
+  <!-- arms (behind the body so they tuck in cleanly) -->
+  <path d="M58 128 q-30 -4 -40 -30" stroke="#c86bff" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M182 128 q30 -4 40 -30" stroke="#c86bff" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- little hands -->
+  <circle cx="17" cy="97" r="9" fill="#d885ff"/>
+  <circle cx="223" cy="97" r="9" fill="#d885ff"/>
+
+  <!-- body -->
+  <path d="M120 40
+           C70 40 44 84 44 130
+           C44 188 78 218 120 218
+           C162 218 196 188 196 130
+           C196 84 170 40 120 40 Z" fill="url(#body)"/>
+
+  <!-- belly highlight -->
+  <ellipse cx="104" cy="120" rx="44" ry="52" fill="#fff" opacity="0.18"/>
+
+  <!-- bandana headband with the name -->
+  <g>
+    <path d="M196 92 L216 104 L210 118 L193 102 Z" fill="#1aa6bd"/>
+    <path d="M198 101 L214 121 L205 131 L192 111 Z" fill="#1aa6bd"/>
+    <path d="M46 78 Q120 68 194 78 L194 102 Q120 92 46 102 Z" fill="url(#band)"/>
+    <path d="M50 82 Q120 73 190 82" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+    <circle cx="196" cy="90" r="9" fill="url(#band)"/>
+    <circle cx="196" cy="90" r="3.4" fill="#0f7f93"/>
+    <text x="120" y="87" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold',sans-serif" font-size="15" font-weight="800" fill="#ffffff" letter-spacing="0.5">Shobhit</text>
+  </g>
+
+  <!-- antenna with star -->
+  <path d="M120 42 q6 -26 22 -34" stroke="#c86bff" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g transform="translate(146 -2)">
+    <path d="M0 -12 L3.4 -3.6 L12 -3.6 L5 2 L7.4 11 L0 5.4 L-7.4 11 L-5 2 L-12 -3.6 L-3.4 -3.6 Z" fill="#ffe680" stroke="#ffd23f" stroke-width="1.5"/>
+  </g>
+
+  <!-- eyes -->
+  <ellipse cx="96" cy="120" rx="15" ry="17" fill="#fff"/>
+  <ellipse cx="146" cy="120" rx="15" ry="17" fill="#fff"/>
+  <circle cx="99" cy="124" r="8.5" fill="#2b2440"/>
+  <circle cx="148" cy="124" r="8.5" fill="#2b2440"/>
+  <circle cx="102" cy="121" r="3" fill="#fff"/>
+  <circle cx="151" cy="121" r="3" fill="#fff"/>
+
+  <!-- cheeks -->
+  <circle cx="74" cy="146" r="10" fill="url(#cheek)" opacity="0.8"/>
+  <circle cx="166" cy="146" r="10" fill="url(#cheek)" opacity="0.8"/>
+
+  <!-- smile -->
+  <path d="M104 150 q17 18 34 0" stroke="#2b2440" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- sparkles -->
+  <g fill="#9ce8ff">
+    <path d="M210 70 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+    <path d="M26 168 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4 z"/>
+  </g>
+</svg>

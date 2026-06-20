@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Keep README in sync (on create)",
+      "trigger": "PostFileCreate",
+      "description": "When a new source file is created, update the README structure/pages/scripts sections.",
+      "matcher": "\\.(html|js|css|svg|json)$",
+      "action": {
+        "type": "agent",
+        "prompt": "A new project file was just created. Update README.md so its \"Project structure\", \"Pages\", and relevant feature/script sections reflect the new file. Only edit README.md, keep changes minimal and consistent with the existing style, and skip if the file is irrelevant to documentation (e.g. a temp or hook file). Do not modify any source files in response to this hook."
+      }
+    }
+  ]
+}

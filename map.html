@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Map · shobhit.org</title>
+  <meta name="description" content="An interactive world map of Shobhits everywhere. Drop your pin on real coordinates and leave a message for the global Shobhit community." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow reveal">The global tapestry</span>
+        <h1 class="reveal d1">Shobhits of the <span class="grad">world</span></h1>
+        <p class="reveal d2">Click anywhere on the map to drop your pin on real coordinates and leave a hello for everyone who comes after you.</p>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="wrap">
+        <div class="map-layout">
+          <div class="map-main reveal">
+            <div id="leafmap" role="application" aria-label="Interactive world map. Click to add your location."></div>
+            <div class="map-toolbar">
+              <div class="map-toolbar__actions">
+                <button class="btn btn--ghost" id="flyRandom">Surprise me 🎲</button>
+              </div>
+            </div>
+            <div class="map-stats">
+              <span><b id="mapCount">0</b> pins dropped</span>
+              <span><b id="mapPlaces">0</b> unique places</span>
+            </div>
+          </div>
+
+          <aside class="map-aside reveal d2">
+            <h2>Latest hellos 👋</h2>
+            <p class="map-aside__hint">Fresh messages from fellow Shobhits.</p>
+            <ul class="feed" id="pinFeed"></ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ADD PIN MODAL -->
+  <dialog class="modal" id="pinModal">
+    <form method="dialog" class="modal__body" id="pinForm">
+      <h3>Drop your pin 📍</h3>
+      <p style="color:var(--ink-soft);margin-bottom:18px;">Join the global Shobhit tapestry. We grabbed your spot from the map — just add the details.</p>
+      <div class="field">
+        <label for="pinName">Your city / where you are</label>
+        <input id="pinName" name="pinName" type="text" placeholder="e.g. Bengaluru, India" maxlength="80" required />
+      </div>
+      <div class="field">
+        <label for="pinMsg">A message for fellow Shobhits</label>
+        <textarea id="pinMsg" name="pinMsg" rows="3" placeholder="Say hi to the others!" maxlength="160"></textarea>
+      </div>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" id="pinCancel">Cancel</button>
+        <button type="submit" class="btn">Plant my pin 🌟</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="scripts/site.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

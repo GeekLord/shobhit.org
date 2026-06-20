@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Name · shobhit.org</title>
+  <meta name="description" content="What does Shobhit mean? Decode the name letter by letter, soak up fun facts, and generate your personal Shobhit vibe." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow reveal">शोभित · Shobhit</span>
+        <h1 class="reveal d1">The meaning behind the <span class="grad">magic</span></h1>
+        <p class="reveal d2">Sanskrit for "adorned" and "shining." Here's the name, fully unpacked.</p>
+      </div>
+    </section>
+
+    <!-- LETTER BREAKDOWN -->
+    <section class="letters-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Letter by letter</span>
+          <h2>Seven letters, seven superpowers</h2>
+          <p>Tap a letter to give it a spin.</p>
+        </div>
+        <div class="letter-grid" id="letterGrid"></div>
+      </div>
+    </section>
+
+    <!-- PERSONA GENERATOR -->
+    <section class="persona-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Just for fun</span>
+          <h2>What kind of Shobhit are you?</h2>
+          <p>Type your full name (or anything) and we'll conjure your one-of-a-kind Shobhit vibe.</p>
+        </div>
+        <form class="persona-form reveal d1" id="personaForm">
+          <input id="personaInput" type="text" placeholder="Type your name…" maxlength="40" />
+          <button class="btn" type="submit">Reveal my vibe ✨</button>
+        </form>
+        <div id="personaOut" class="persona-out reveal d2"></div>
+      </div>
+    </section>
+
+    <!-- FACTS -->
+    <section class="facts">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Trivia stash</span>
+          <h2>Fun facts about "Shobhit"</h2>
+        </div>
+        <div class="facts__grid" id="factsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/site.js"></script>
+  <script src="scripts/quotes.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

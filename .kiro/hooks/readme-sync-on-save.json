@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Keep README in sync (on save)",
+      "trigger": "PostFileSave",
+      "description": "When a project source file is saved, review README.md and update it if the change affects documented behavior.",
+      "matcher": "\\.(html|js|css|svg|json)$",
+      "action": {
+        "type": "agent",
+        "prompt": "A project source file was just saved. Review README.md against the current state of the project and update it ONLY if this change affects anything documented there — features, project structure, pages, the API reference, scripts and their responsibilities, achievements/Easter eggs, setup/run instructions, or the design system. If the README is already accurate, make no changes and do not comment. Keep edits surgical, factual, and consistent with the existing README style. Never alter source files in response to this hook, and never trigger a documentation loop by treating README.md edits as changes that need further documentation."
+      }
+    }
+  ]
+}
