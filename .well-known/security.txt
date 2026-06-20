@@ -1,0 +1,6 @@
+# Security Policy for shobhit.org
+# https://securitytxt.org/
+
+Contact: mailto:shobhit@shobhit.net
+Preferred-Languages: en
+Canonical: https://shobhit.org/.well-known/security.txt

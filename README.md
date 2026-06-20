@@ -88,6 +88,14 @@ See [deploy.md](deploy.md) for detailed deployment, CI/CD pipeline, and extensio
 
 The repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that auto-deploys to the server on push to `main`. See deploy.md for setup instructions.
 
+### SEO
+
+The site is optimized for search engines and AI bots. See [SEO.md](SEO.md) for details on:
+- Meta tags and Open Graph
+- Structured data (JSON-LD)
+- sitemap.xml and robots.txt
+- AI bot instructions (llms.txt)
+
 ---
 
 ## Project structure

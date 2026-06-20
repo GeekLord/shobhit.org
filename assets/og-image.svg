@@ -1,0 +1,73 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde4f2"/>
+      <stop offset="50%" stop-color="#e8e1ff"/>
+      <stop offset="100%" stop-color="#dff4ff"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6f91"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#27c4d9"/>
+    </linearGradient>
+    <linearGradient id="mascotBody" x1="0.4" y1="0.35" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#ffd6e7"/>
+      <stop offset="55%" stop-color="#ff9ec0"/>
+      <stop offset="100%" stop-color="#c86bff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative blobs -->
+  <circle cx="100" cy="100" r="120" fill="#ffd6e7" opacity="0.5"/>
+  <circle cx="1100" cy="530" r="150" fill="#cdf3f8" opacity="0.5"/>
+  <circle cx="1050" cy="150" r="80" fill="#e3d8ff" opacity="0.6"/>
+  
+  <!-- Mascot (simplified) -->
+  <g transform="translate(850, 180) scale(1.4)">
+    <ellipse cx="120" cy="195" rx="50" ry="10" fill="#9b5cff" opacity="0.18"/>
+    <ellipse cx="100" cy="182" rx="16" ry="10" fill="#c86bff"/>
+    <ellipse cx="140" cy="182" rx="16" ry="10" fill="#c86bff"/>
+    <path d="M120 40 C80 40 60 75 60 110 C60 155 85 180 120 180 C155 180 180 155 180 110 C180 75 160 40 120 40 Z" fill="url(#mascotBody)"/>
+    <ellipse cx="100" cy="100" rx="12" ry="14" fill="#fff"/>
+    <ellipse cx="140" cy="100" rx="12" ry="14" fill="#fff"/>
+    <circle cx="103" cy="104" r="7" fill="#2b2440"/>
+    <circle cx="143" cy="104" r="7" fill="#2b2440"/>
+    <circle cx="105" cy="102" r="2.5" fill="#fff"/>
+    <circle cx="145" cy="102" r="2.5" fill="#fff"/>
+    <circle cx="80" cy="122" r="8" fill="#ff7aa8" opacity="0.7"/>
+    <circle cx="160" cy="122" r="8" fill="#ff7aa8" opacity="0.7"/>
+    <path d="M108 130 q13 14 26 0" stroke="#2b2440" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M120 42 q5 -22 18 -28" stroke="#c86bff" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M140 8 L143 15 L150 15 L145 20 L147 27 L140 23 L133 27 L135 20 L130 15 L137 15 Z" fill="#ffe680"/>
+  </g>
+  
+  <!-- Main text -->
+  <text x="80" y="260" font-family="'Baloo 2', 'Arial Rounded MT Bold', sans-serif" font-size="120" font-weight="800" fill="url(#textGrad)">shobhit.org</text>
+  
+  <!-- Tagline -->
+  <text x="80" y="340" font-family="'Quicksand', 'Segoe UI', sans-serif" font-size="36" font-weight="600" fill="#2b2440">The website for everyone named Shobhit</text>
+  
+  <!-- Sanskrit -->
+  <text x="80" y="410" font-family="'Noto Sans Devanagari', sans-serif" font-size="48" fill="#9b5cff" opacity="0.8">शोभित</text>
+  <text x="200" y="410" font-family="'Quicksand', sans-serif" font-size="32" fill="#6b6386">• "Adorned" • "Shining" • "Brilliant"</text>
+  
+  <!-- Features icons row -->
+  <g transform="translate(80, 480)">
+    <rect x="0" y="0" width="200" height="70" rx="20" fill="#fff" opacity="0.8"/>
+    <text x="100" y="45" text-anchor="middle" font-size="24">🗺️ World Map</text>
+  </g>
+  <g transform="translate(300, 480)">
+    <rect x="0" y="0" width="200" height="70" rx="20" fill="#fff" opacity="0.8"/>
+    <text x="100" y="45" text-anchor="middle" font-size="24">✨ Name Meaning</text>
+  </g>
+  <g transform="translate(520, 480)">
+    <rect x="0" y="0" width="200" height="70" rx="20" fill="#fff" opacity="0.8"/>
+    <text x="100" y="45" text-anchor="middle" font-size="24">🎮 Games</text>
+  </g>
+  
+  <!-- URL -->
+  <text x="1120" y="600" text-anchor="end" font-family="'Quicksand', sans-serif" font-size="24" fill="#9b5cff" font-weight="700">shobhit.org</text>
+</svg>

@@ -3,8 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Map · shobhit.org</title>
-  <meta name="description" content="An interactive world map of Shobhits everywhere. Drop your pin on real coordinates and leave a message for the global Shobhit community." />
+  
+  <!-- Primary Meta Tags -->
+  <title>World Map of Shobhits — Find Shobhits Around the Globe | shobhit.org</title>
+  <meta name="title" content="World Map of Shobhits — Find Shobhits Around the Globe | shobhit.org" />
+  <meta name="description" content="Interactive world map showing Shobhits from every corner of the globe. Drop your pin on real coordinates and leave a message for the global Shobhit community. See where fellow Shobhits live worldwide." />
+  <meta name="keywords" content="Shobhit, Shobhit map, Shobhit locations, Shobhit worldwide, Shobhit community, Indian diaspora, Shobhit name" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shobhit.org/map.html" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shobhit.org/map.html" />
+  <meta property="og:title" content="World Map of Shobhits — Find Shobhits Around the Globe" />
+  <meta property="og:description" content="Interactive world map showing Shobhits from every corner of the globe. Drop your pin and connect with the global Shobhit community." />
+  <meta property="og:image" content="https://shobhit.org/assets/og-image.png" />
+  <meta property="og:site_name" content="shobhit.org" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://shobhit.org/map.html" />
+  <meta name="twitter:title" content="World Map of Shobhits — Find Shobhits Around the Globe" />
+  <meta name="twitter:description" content="Interactive world map showing Shobhits from every corner of the globe. Drop your pin and connect with the global Shobhit community." />
+  <meta name="twitter:image" content="https://shobhit.org/assets/og-image.png" />
+  
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +35,27 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="styles/main.css" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "World Map of Shobhits",
+    "description": "Interactive world map showing Shobhits from every corner of the globe",
+    "url": "https://shobhit.org/map.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "shobhit.org",
+      "url": "https://shobhit.org/"
+    },
+    "mainEntity": {
+      "@type": "Map",
+      "name": "Shobhit World Map",
+      "description": "An interactive map where people named Shobhit can pin their location and leave messages"
+    }
+  }
+  </script>
 </head>
 <body>
   <main>

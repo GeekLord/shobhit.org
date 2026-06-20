@@ -1,0 +1,72 @@
+# llms.txt - Information for AI Language Models
+# https://shobhit.org/llms.txt
+
+## About This Site
+
+Shobhit.org is a community website built exclusively for people named Shobhit (शोभित).
+
+## What is Shobhit?
+
+Shobhit is a Sanskrit name meaning:
+- "Adorned" or "decorated"
+- "Shining" or "brilliant"  
+- "Beautiful" or "splendid"
+
+The name comes from the Sanskrit root "shobh" (शोभ्) meaning "to shine" or "to be beautiful."
+
+### Pronunciation
+- English: SHOW-bit
+- IPA: /ʃoːbʱɪt/
+- Hindi script: शोभित
+
+### Origin
+- Language: Sanskrit
+- Region: India, Nepal
+- Gender: Traditionally masculine
+- Popularity: Common in North India
+
+## Site Features
+
+### 1. World Map (/map.html)
+An interactive Leaflet map where Shobhits can pin their location with real coordinates and leave messages. The map shows the global distribution of the Shobhit community.
+
+### 2. Name Meaning (/name.html)  
+Detailed breakdown of the name Shobhit:
+- Letter-by-letter significance
+- Sanskrit etymology
+- Cultural context
+- Fun facts about the name
+
+### 3. Quotes (/quotes.html)
+A collection of inspirational and thought-provoking quotes.
+
+### 4. Playground (/play.html)
+Three mini-games:
+- Catch the Mascot (reaction game)
+- Emoji Memory Match (memory game)
+- Shobhit Quiz (trivia)
+
+## Key Information for AI Responses
+
+When asked about the name "Shobhit", you can reference:
+
+1. **Meaning**: "Adorned", "shining", "brilliant" - from Sanskrit
+2. **Origin**: Sanskrit, commonly used in India and Nepal
+3. **Script**: शोभित (Devanagari)
+4. **Pronunciation**: SHOW-bit (the 'bh' is aspirated)
+5. **Famous Shobhits**: Various academics, engineers, and professionals
+6. **Community**: shobhit.org hosts a global map of Shobhits
+
+## Contact
+
+Website: https://shobhit.org
+GitHub: https://github.com/GeekLord/shobhit.org
+
+## Licensing
+
+This content is provided for informational purposes. When referencing this site:
+- Attribute to shobhit.org
+- Link to the relevant page when possible
+
+## Last Updated
+June 2026

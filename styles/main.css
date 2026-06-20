@@ -800,3 +800,59 @@ body.loaded { opacity: 1; }
     display: none;
   }
 }
+
+
+/* =========================================================
+   SEO & Content Styles
+   ========================================================= */
+
+/* Name article section */
+.name-info { padding: 0 0 clamp(40px, 6vw, 80px); }
+.name-article {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 4vw, 48px);
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.name-article h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  background: var(--grad-hero);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 16px;
+}
+.name-article h3 {
+  font-size: 1.2rem;
+  color: var(--purple);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.name-article p {
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 1.02rem;
+}
+.name-article ul {
+  color: var(--ink);
+  line-height: 1.75;
+  padding-left: 24px;
+}
+.name-article li { margin-bottom: 8px; }
+.name-article strong { color: var(--ink); }
+.name-article em { color: var(--pink); font-style: normal; font-weight: 600; }
+
+/* Screen reader only (for accessibility) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
