@@ -1,0 +1,33 @@
+# Data files (preserve on deploy, don't overwrite)
+data/pins.json
+data/subscribers.json
+data/guestbook.json
+
+# Keep the data directory structure
+!data/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node (if dependencies are ever added)
+node_modules/

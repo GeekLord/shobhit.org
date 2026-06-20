@@ -2,14 +2,18 @@
 
 A playful, visually rich web experience built exclusively for people named **Shobhit**. Pin yourself on a real world map, decode the meaning of the name, collect quotes, beat three mini-games, and hunt down hidden Easter eggs.
 
-The whole thing is a self-contained static site with an optional zero-dependency Node backend that saves map pins to a file. No frameworks, no build step, no tracking.
+**Live site:** [https://shobhit.org](https://shobhit.org)  
+**Repository:** [https://github.com/GeekLord/shobhit.org](https://github.com/GeekLord/shobhit.org)
+
+The whole thing is a self-contained static site with a zero-dependency Node.js backend that saves map pins to a file and sends contact form emails. No frameworks, no build step, no tracking.
 
 ---
 
 ## Table of contents
 
 - [Features](#features)
-- [Quick start](#quick-start)
+- [Quick start (local development)](#quick-start-local-development)
+- [Production deployment](#production-deployment)
 - [Project structure](#project-structure)
 - [Pages](#pages)
 - [The backend & data persistence](#the-backend--data-persistence)
@@ -25,8 +29,9 @@ The whole thing is a self-contained static site with an optional zero-dependency
 ## Features
 
 - 🗺️ **Real interactive world map** — Leaflet + OpenStreetMap tiles. Click anywhere to drop a pin on true coordinates and leave a message. Reverse geocoding pre-fills your city.
-- 💾 **File-based persistence** — pins are saved to `data/pins.json` through a tiny Node server, with automatic `localStorage` fallback when the server isn't running.
+- 💾 **File-based persistence** — pins are saved to `data/pins.json` through the Node.js server.
 - 📨 **Live "Latest hellos" feed** — recent messages from fellow Shobhits, with relative timestamps.
+- ✉️ **Contact form** — floating contact button on every page, sends emails via Postfix.
 - ✨ **The Name, decoded** — letter-by-letter breakdown of S-H-O-B-H-I-T, fun facts, and a "What kind of Shobhit are you?" vibe generator.
 - 💬 **Quotes** — an auto-rotating quote stage with copy-to-clipboard, plus a full masonry quote wall.
 - 🎮 **Playground** — three mini-games: Catch the Mascot, Emoji Memory Match, and the Shobhit Quiz, all with saved best scores.
@@ -36,11 +41,9 @@ The whole thing is a self-contained static site with an optional zero-dependency
 
 ---
 
-## Quick start
+## Quick start (local development)
 
-### Option A — full experience (recommended)
-
-Runs the Node server so map pins persist to a file.
+### Run with Node.js server
 
 ```bash
 node server.js
@@ -60,9 +63,30 @@ PORT=3000 node server.js
 $env:PORT=3000; node server.js
 ```
 
-### Option B — static only
+### Static only (without API)
 
-Open `index.html` directly in a browser, or serve the folder with any static server (e.g. `python -m http.server`). The map still works fully, but pins are saved to your browser's `localStorage` instead of a file.
+Open `index.html` directly in a browser. The map still works but pins are saved to `localStorage` instead of the server.
+
+---
+
+## Production deployment
+
+The site is deployed on a CentOS server with CWP (CentOS Web Panel).
+
+| Setting | Value |
+|---------|-------|
+| **Server** | CWP with mod_nodejs |
+| **User** | `shobhito` |
+| **Path** | `/home/shobhito/public_html/` |
+| **Node.js** | 18.x |
+| **Port** | 8899 |
+| **Mail** | Postfix (sendmail) |
+
+See [deploy.md](deploy.md) for detailed deployment, CI/CD pipeline, and extension instructions.
+
+### CI/CD
+
+The repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that auto-deploys to the server on push to `main`. See deploy.md for setup instructions.
 
 ---
 
@@ -77,6 +101,7 @@ shobhit.org/
 ├── play.html             # Playground: games + achievements board
 ├── server.js             # Zero-dependency static + API server
 ├── README.md             # This file
+├── deploy.md             # Deployment guide for CWP
 ├── shobhit.org.md        # Original product brief
 ├── assets/
 │   ├── favicon.svg        # Site icon
@@ -91,7 +116,8 @@ shobhit.org/
 │   ├── map.js             # Leaflet map, pin add/persist, message feed
 │   ├── quotes.js          # Facts, quotes, name letters, persona generator
 │   ├── play.js            # The three mini-games + achievements board
-│   └── home.js            # Home-only: animated stats + mascot pats
+│   ├── home.js            # Home page hero animations, eye tracking
+│   └── contact.js         # Floating contact button & modal form
 └── styles/
     └── main.css           # The entire design system
 ```
@@ -135,6 +161,7 @@ Base URL: `http://localhost:8899`
 |--------|----------|-------------|
 | `GET` | `/api/pins` | Returns `{ "pins": [...] }` |
 | `POST` | `/api/pins` | Adds a pin. Body: `{ lat, lon, place, msg }`. Returns `{ pin, count }` |
+| `POST` | `/api/contact` | Sends contact email. Body: `{ name, email, message }` |
 | `GET` | `/api/pins.csv` | Download all pins as CSV |
 | `GET` | `/api/pins.download` | Download all pins as JSON |
 
@@ -154,7 +181,15 @@ A pin record looks like:
 
 > Note: the CSV/JSON download endpoints still exist on the server but are no longer linked from the UI.
 
-> ⚠️ **Security note:** `POST /api/pins` is open and unauthenticated. That's fine for local/personal use, but add rate-limiting or moderation before exposing it publicly.
+### Contact Email
+
+The `/api/contact` endpoint sends emails using Postfix's `sendmail`:
+
+- **To:** `shobhit@shobhit.net`
+- **From:** `noreply@shobhit.org`
+- **Reply-To:** Sender's email address
+
+> ⚠️ **Security note:** API endpoints are open and unauthenticated. That's fine for a personal site, but add rate-limiting or moderation if traffic increases.
 
 ---
 

@@ -1,0 +1,2 @@
+# This file ensures the data directory exists after git clone
+# Actual data files (pins.json, etc.) are gitignored to preserve server data
